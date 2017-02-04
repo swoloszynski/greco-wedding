@@ -1,15 +1,18 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
 
-# TEAM
+    Web Developer: Sam Woloszynski
+    Site: samwolo.com
+    Location: Remote / Virginia, USA
 
-    <name> -- <role> -- <twitter>
+/* THANKS */
 
-# THANKS
+    Name: Kate Kingsbury
 
-    <name>
+/* SITE */
 
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Last update: 2017/02/04
+    Standards: HTML5, CSS3,..
+    Components: Modernizr, jQuery, etc.
+    Software: Sublime Text, Pixelmator
+    Language: English
+    Doctype: HTML5
