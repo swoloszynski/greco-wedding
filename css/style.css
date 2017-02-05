@@ -28,6 +28,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bodoni-72-Book';
+  src: url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot');
+  src: url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
+       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff') format('woff'),
+       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.ttf') format('truetype'),
+       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg'),
+       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Nav */
 
 .nav-custom a {
