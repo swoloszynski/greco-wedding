@@ -62,10 +62,41 @@
 .nav-custom {
   background: #4a627c;
   color: #fbfdfc;
+  margin-bottom: 0;
 }
 
 .nav-custom div:hover {
   background: #07284b;
+}
+
+/* Banner */
+
+.banner-image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.mobile-img-replacement {
+  min-height: 200px;
+}
+
+.banner-text {
+   position: absolute;
+   top: 56px;
+}
+
+.banner-name {
+   font-family: 'Charlotte', cursive;
+}
+
+.banner-date {
+   font-family: 'Bodoni-72-Book', sans-serif;
+   margin-bottom: 0;
+}
+
+.banner-location {
+   font-family: 'Bodoni-72-Smallcaps-Book', sans-serif;
+   margin-top: 0;
 }
 
 /* Custom palette */
