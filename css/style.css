@@ -13,6 +13,21 @@
 	font-size: inherit;
 }
 
+/* Nav */
+
+.nav-custom a {
+  color: #fbfdfc;
+}
+
+.nav-custom {
+  background: #4a627c;
+  color: #fbfdfc;
+}
+
+.nav-custom div:hover {
+  background: #07284b;
+}
+
 /* Custom palette */
 
 .background-dark-blue {
