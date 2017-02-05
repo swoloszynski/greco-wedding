@@ -13,6 +13,21 @@
 	font-size: inherit;
 }
 
+/* Custom Fonts */
+@font-face {
+  font-family: 'charlotte';
+  src: url('fonts/charlotte/Charlotte.eot');
+  src: url('fonts/charlotte/Charlotte.otf');
+  src: url('fonts/charlotte/Charlotte.ttf');
+  src: url('fonts/charlotte/Charlotte.woff2') format('woff2'),
+       url('fonts/charlotte/Charlotte.woff') format('woff'),
+       url('fonts/charlotte/Charlotte.ttf') format('truetype'),
+       url('fonts/charlotte/Charlotte.svg#Charlotte') format('svg'),
+       url('fonts/charlotte/Charlotte.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Nav */
 
 .nav-custom a {
