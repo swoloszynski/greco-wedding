@@ -12,3 +12,63 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+/* Custom palette */
+
+.background-dark-blue {
+  background: #07284b;
+}
+
+.text-dark-blue {
+  color: #07284b;
+}
+
+.background-light-blue {
+  background: #4a627c;
+}
+
+.text-light-blue {
+  color: #4a627c;
+}
+
+.background-dark-yellow {
+  background: #ca9439;
+}
+
+.text-dark-yellow {
+  color: #ca9439;
+}
+
+.background-light-yellow {
+  background: #d3a75d;
+}
+
+.text-light-yellow {
+  color: #d3a75d;
+}
+
+.background-off-white {
+  background: #fbfdfc;
+}
+
+.text-off-white {
+  color: #fbfdfc;
+}
+
+.background-salmon {
+  background: #df885c;
+}
+
+.text-salmon {
+  color: #df885c;
+}
+
+/* Custom footer colors */
+
+footer.custom {
+  background: #d3a75d;
+}
+
+body > footer > div.footer-copyright.custom {
+  background: #ca9439;
+}
