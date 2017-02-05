@@ -15,39 +15,40 @@
 
 /* Custom Fonts */
 @font-face {
-  font-family: 'charlotte';
-  src: url('fonts/charlotte/Charlotte.eot');
-  src: url('fonts/charlotte/Charlotte.otf');
-  src: url('fonts/charlotte/Charlotte.ttf');
-  src: url('fonts/charlotte/Charlotte.woff2') format('woff2'),
-       url('fonts/charlotte/Charlotte.woff') format('woff'),
-       url('fonts/charlotte/Charlotte.ttf') format('truetype'),
-       url('fonts/charlotte/Charlotte.svg#Charlotte') format('svg'),
-       url('fonts/charlotte/Charlotte.eot?#iefix') format('embedded-opentype');
+  font-family: 'Charlotte';
+  src: url('../fonts/charlotte/Charlotte.eot');
+  src: url('../fonts/charlotte/Charlotte.otf');
+  src: url('../fonts/charlotte/Charlotte.ttf');
+  src: url('../fonts/charlotte/Charlotte.woff2') format('woff2'),
+       url('../fonts/charlotte/Charlotte.woff') format('woff'),
+       url('../fonts/charlotte/Charlotte.ttf') format('truetype'),
+       url('../fonts/charlotte/Charlotte.svg#Charlotte') format('svg'),
+       url('../fonts/charlotte/Charlotte.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni-72-Book';
-  src: url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot');
-  src: url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
-       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff') format('woff'),
-       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.ttf') format('truetype'),
-       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg'),
-       url('fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot');
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.otf');
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff') format('woff'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.ttf') format('truetype'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bodoni-72-Smallcaps-Book';
-  src: url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot');
-  src: url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff2') format('woff2'),
-       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff') format('woff'),
-       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.ttf') format('truetype'),
-       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.svg#Bodoni-72-Smallcaps-Book') format('svg'),
-       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot');
+  src: url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff2') format('woff2'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff') format('woff'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.ttf') format('truetype'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.svg#Bodoni-72-Smallcaps-Book') format('svg'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
