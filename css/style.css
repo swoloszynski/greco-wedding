@@ -40,6 +40,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bodoni-72-Smallcaps-Book';
+  src: url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot');
+  src: url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff2') format('woff2'),
+       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff') format('woff'),
+       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.ttf') format('truetype'),
+       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.svg#Bodoni-72-Smallcaps-Book') format('svg'),
+       url('fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Nav */
 
 .nav-custom a {
