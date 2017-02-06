@@ -6,13 +6,6 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
 /* Custom Fonts */
 @font-face {
   font-family: 'Charlotte';
@@ -53,11 +46,17 @@
   font-style: normal;
 }
 
+/* Set custom default fonts */
+html {
+ font-family: 'Bodoni-72-Book', "Palatino Linotype", "Book Antiqua", Palatino, Times, serif;
+}
+
 /* Nav */
 
 .nav-custom a {
   color: #fbfdfc;
    font-family: 'Bodoni-72-Book', serif;
+   font-size: 18px;
 }
 
 .nav-custom {
@@ -170,7 +169,10 @@
   color: #df885c;
 }
 
-/* Custom footer colors */
+/* Footer */
+footer {
+ font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
+}
 
 footer.custom {
   background: #d3a75d;
