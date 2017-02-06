@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+/* Off white default background color */
+html {
+  background: #fbfdfc;
+}
+
 /* Custom Fonts */
 @font-face {
   font-family: 'Charlotte';
@@ -89,7 +94,8 @@ html a:hover {
 }
 
 .mobile-img-replacement {
-  min-height: 200px;
+  min-height: 222px;
+  background: #fbfdfc;
 }
 
 .banner-text {
