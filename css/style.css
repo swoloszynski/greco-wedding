@@ -61,24 +61,24 @@ html a:hover {
 
 /* Nav */
 
-.nav-custom a {
+.nav-custom-wrapper a {
   color: #fbfdfc;
    font-family: 'Bodoni-72-Book', serif;
    font-size: 18px;
 }
 
-.nav-custom {
+.nav-custom-wrapper {
   background: #4a627c;
   color: #fbfdfc;
   margin-bottom: 0;
 }
 
-.nav-custom .nav-custom-active {
-  color: #07284b;
+.nav-custom-wrapper > a > .nav-custom-active {
+  color: #d3a75d;
 }
 
-.nav-custom div:hover {
-  color: #fbfdfc;
+.nav-custom-wrapper > a > .nav-custom-tab:hover {
+  color: #d3a75d;
 }
 
 /* Banner */
