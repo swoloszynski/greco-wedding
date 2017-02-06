@@ -73,27 +73,11 @@ html a:hover {
   margin-bottom: 0;
 }
 
-.nav-custom div {
-  border-top-width: .5em;
-  border-top: #4a627c;
-  border-bottom-width: .5em;
-  border-bottom: #4a627c;
-  border-bottom-style: solid;
-}
-
 .nav-custom .nav-custom-active {
-  border-bottom-width: .5em;
-  border-bottom: #07284b;
-  border-bottom-style: solid;
   color: #07284b;
 }
 
 .nav-custom div:hover {
-  border-top-width: .5em;
-  border-top: #4a627c;
-  border-bottom-width: .5em;
-  border-bottom: #fbfdfc;
-  border-bottom-style: solid;
   color: #fbfdfc;
 }
 
