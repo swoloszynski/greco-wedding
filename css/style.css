@@ -1,0 +1,192 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'Charlotte';
+  src: url('../fonts/charlotte/Charlotte.eot');
+  src: url('../fonts/charlotte/Charlotte.otf');
+  src: url('../fonts/charlotte/Charlotte.ttf');
+  src: url('../fonts/charlotte/Charlotte.woff2') format('woff2'),
+       url('../fonts/charlotte/Charlotte.woff') format('woff'),
+       url('../fonts/charlotte/Charlotte.ttf') format('truetype'),
+       url('../fonts/charlotte/Charlotte.svg#Charlotte') format('svg'),
+       url('../fonts/charlotte/Charlotte.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni-72-Book';
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot');
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.otf');
+  src: url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.woff') format('woff'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.ttf') format('truetype'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg'),
+       url('../fonts/bodoni72/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni-72-Smallcaps-Book';
+  src: url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot');
+  src: url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff2') format('woff2'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.woff') format('woff'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.ttf') format('truetype'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.svg#Bodoni-72-Smallcaps-Book') format('svg'),
+       url('../fonts/bodoni72smallcaps/Bodoni-72-Smallcaps-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set custom default fonts */
+html {
+ font-family: 'Bodoni-72-Book', "Palatino Linotype", "Book Antiqua", Palatino, Times, serif;
+}
+
+html a {
+ color: #4a627c;
+}
+
+html a:hover {
+ text-decoration: underline;
+}
+
+/* Nav */
+
+.nav-custom-wrapper a {
+  color: #fbfdfc;
+   font-family: 'Bodoni-72-Book', serif;
+   font-size: 18px;
+}
+
+.nav-custom-wrapper {
+  background: #4a627c;
+  color: #fbfdfc;
+  margin-bottom: 0;
+}
+
+.nav-custom-wrapper > a > .nav-custom-active {
+  color: #d3a75d;
+}
+
+.nav-custom-wrapper > a > .nav-custom-tab:hover {
+  color: #d3a75d;
+}
+
+/* Banner */
+
+.banner-image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.mobile-img-replacement {
+  min-height: 200px;
+}
+
+.banner-text {
+   position: absolute;
+   top: 56px;
+}
+
+.banner-name {
+   font-family: 'Charlotte', cursive;
+}
+
+.banner-date {
+   font-family: 'Bodoni-72-Book', serif;
+   margin-bottom: 0;
+}
+
+.banner-location {
+   font-family: 'Bodoni-72-Smallcaps-Book', serif;
+   margin-top: 0;
+}
+
+/* Home */
+
+.accent-text {
+  color: #ca9439;
+  font-family: 'Charlotte', cursive;
+  font-size: 20;
+}
+
+.intro-text {
+    font-family: 'Bodoni-72-Book', serif;
+    font-size: 18px;
+}
+
+.cushion-25 {
+  height: 25px;
+}
+
+/* Custom palette */
+
+.background-dark-blue {
+  background: #07284b;
+}
+
+.text-dark-blue {
+  color: #07284b;
+}
+
+.background-light-blue {
+  background: #4a627c;
+}
+
+.text-light-blue {
+  color: #4a627c;
+}
+
+.background-dark-yellow {
+  background: #ca9439;
+}
+
+.text-dark-yellow {
+  color: #ca9439;
+}
+
+.background-light-yellow {
+  background: #d3a75d;
+}
+
+.text-light-yellow {
+  color: #d3a75d;
+}
+
+.background-off-white {
+  background: #fbfdfc;
+}
+
+.text-off-white {
+  color: #fbfdfc;
+}
+
+.background-salmon {
+  background: #df885c;
+}
+
+.text-salmon {
+  color: #df885c;
+}
+
+/* Footer */
+footer {
+ font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+footer.custom {
+  background: #d3a75d;
+}
+
+body > footer > div.footer-copyright.custom {
+  background: #ca9439;
+}

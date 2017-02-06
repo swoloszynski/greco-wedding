@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Charlotte';
+  src: url('Charlotte.eot');
+  src: url('Charlotte.woff2') format('woff2'),
+       url('Charlotte.woff') format('woff'),
+       url('Charlotte.ttf') format('truetype'),
+       url('Charlotte.svg#Charlotte') format('svg'),
+       url('Charlotte.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
