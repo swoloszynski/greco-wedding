@@ -51,6 +51,14 @@ html {
  font-family: 'Bodoni-72-Book', "Palatino Linotype", "Book Antiqua", Palatino, Times, serif;
 }
 
+html a {
+ color: #4a627c;
+}
+
+html a:hover {
+ text-decoration: underline;
+}
+
 /* Nav */
 
 .nav-custom a {
@@ -117,6 +125,23 @@ html {
 .banner-location {
    font-family: 'Bodoni-72-Smallcaps-Book', serif;
    margin-top: 0;
+}
+
+/* Home */
+
+.accent-text {
+  color: #ca9439;
+  font-family: 'Charlotte', cursive;
+  font-size: 20;
+}
+
+.intro-text {
+    font-family: 'Bodoni-72-Book', serif;
+    font-size: 18px;
+}
+
+.cushion-25 {
+  height: 25px;
 }
 
 /* Custom palette */
