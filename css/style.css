@@ -117,6 +117,15 @@ html a:hover {
    margin-top: 0;
 }
 
+.no-decoration:hover {
+  text-decoration: none;
+}
+
+.mobile-header-spacing {
+  padding-top: 14px !important;
+  padding-bottom: 22px !important;
+}
+
 /* Home */
 
 .accent-text {
