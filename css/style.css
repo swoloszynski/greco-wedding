@@ -69,13 +69,15 @@ html a:hover {
 .nav-custom-wrapper a {
   color: #fbfdfc;
    font-family: 'Bodoni-72-Book', serif;
-   font-size: 18px;
+   font-size: 19px;
 }
 
 .nav-custom-wrapper {
   background: #4a627c;
   color: #fbfdfc;
   margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .nav-custom-wrapper > a > .nav-custom-active {
@@ -131,12 +133,12 @@ html a:hover {
 .accent-text {
   color: #ca9439;
   font-family: 'Charlotte', cursive;
-  font-size: 20;
+  font-size: 22px;
 }
 
 .intro-text {
     font-family: 'Bodoni-72-Book', serif;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .cushion-25 {
