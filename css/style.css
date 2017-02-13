@@ -76,6 +76,8 @@ html a:hover {
   background: #4a627c;
   color: #fbfdfc;
   margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .nav-custom-wrapper > a > .nav-custom-active {
