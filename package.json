@@ -1,0 +1,26 @@
+{
+  "name": "greco-wedding",
+  "version": "1.0.0",
+  "description": "Event website for Kate and Patrick's wedding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swoloszynski/greco-wedding.git"
+  },
+  "keywords": [
+    "wedding",
+    "event"
+  ],
+  "author": "Sam Woloszynski",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/swoloszynski/greco-wedding/issues"
+  },
+  "homepage": "https://github.com/swoloszynski/greco-wedding#readme",
+  "dependencies": {
+    "surge": "0.18.0"
+  }
+}
