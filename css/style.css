@@ -252,6 +252,40 @@ td {
   padding-bottom : 0;
 }
 
+/* Accommodations */
+.accomm-text {
+    font-size: 18px;
+    margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.accomm-header-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /*display: inline;*/
+}
+
+.accomm-subheader-text {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*display: inline;*/
+}
+
+.accomm-btn:hover {
+  text-decoration: none;
+  background-color: #07284b;
+
+}
+.accomm-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 36px;
+  line-height: 36px;
+}
+
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
