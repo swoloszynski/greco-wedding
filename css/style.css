@@ -80,6 +80,10 @@ html a:hover {
   padding-bottom: 5px;
 }
 
+nav.nav-extended .nav-custom-wrapper {
+  min-height: 62px;
+}
+
 .nav-custom-wrapper > a > .nav-custom-active {
   color: #d3a75d;
 }
@@ -193,6 +197,35 @@ html a:hover {
 
 .text-salmon {
   color: #df885c;
+}
+
+/* Schedule */
+.schedule-header {
+  margin-bottom: 0;
+}
+
+.schedule-event-time {
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.schedule-event-name {
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.schedule-event-location {
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 10px;
+}
+
+td {
+  padding-top : 0;
+  padding-bottom : 0;
 }
 
 /* Footer */
