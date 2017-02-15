@@ -254,8 +254,9 @@ td {
 
 /* Accommodations */
 .accomm-text {
-    font-size: 18px;
-    margin-top: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
@@ -264,14 +265,13 @@ td {
   font-size: 22px;
   margin-top: 5px;
   margin-bottom: 10px;
-  /*display: inline;*/
 }
 
 .accomm-subheader-text {
   font-size: 20px;
+  line-height: 22px;
   margin-top: 5px;
   margin-bottom: 5px;
-  /*display: inline;*/
 }
 
 .custom-bold {
