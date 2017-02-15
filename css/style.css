@@ -274,6 +274,10 @@ td {
   /*display: inline;*/
 }
 
+.custom-bold {
+  font-weight: 600;
+}
+
 .accomm-btn:hover {
   text-decoration: none;
   background-color: #07284b;
