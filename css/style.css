@@ -68,8 +68,8 @@ html a:hover {
 
 .nav-custom-wrapper a {
   color: #fbfdfc;
-   font-family: 'Bodoni-72-Book', serif;
-   font-size: 19px;
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 19px;
 }
 
 .nav-custom-wrapper {
@@ -290,6 +290,49 @@ td {
   line-height: 36px;
 }
 
+/* Charlottesville */
+.custom-nav-tabs {
+  height: 34px;
+}
+
+.custom-nav-tabs .nav-content {
+  height: 32px;
+}
+
+.custom-nav-tabs .tabs {
+  height: 28px;
+}
+
+.custom-tab-link:hover {
+  text-decoration: none;
+}
+
+.nav-custom-tabs-wrapper a {
+  color: #ca9439;
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.nav-custom-tabs-wrapper {
+  background: #ca9439;
+  color: #fbfdfc;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav.nav-extended .nav-custom-tabs-wrapper {
+  min-height: 62px;
+}
+
+.nav-custom-tabs-wrapper > a > .nav-custom-active {
+  color: #d3a75d;
+}
+
+.nav-custom-tabs-wrapper > a > .nav-custom-tab:hover {
+  color: #d3a75d;
+}
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
