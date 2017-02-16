@@ -340,6 +340,12 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   color: #d3a75d;
 }
 
+@media only screen and (min-width: 601px) {
+  .custom-tab {
+    width: 25%;
+  }
+}
+
 .cville-img {
   max-height: 155px;
 }
