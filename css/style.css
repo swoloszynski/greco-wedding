@@ -253,7 +253,8 @@ td {
 }
 
 /* Accommodations */
-.accomm-text {
+.accomm-text,
+.cville-text {
   font-size: 18px;
   line-height: 22px;
   margin-top: 5px;
@@ -333,6 +334,25 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 .nav-custom-tabs-wrapper > a > .nav-custom-tab:hover {
   color: #d3a75d;
 }
+
+.cville-img {
+  max-height: 155px;
+}
+
+.cville-img-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cville-who-label-mobile {
+  font-family: 'Charlotte', cursive;
+  font-size: 13px;
+  line-height: 25px;
+  vertical-align: bottom;
+}
+
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
