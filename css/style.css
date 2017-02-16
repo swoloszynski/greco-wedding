@@ -154,6 +154,11 @@ nav.nav-extended .nav-custom-wrapper {
   margin: 0;
 }
 
+.cushion-10  {
+  height: 10px;
+  margin: 0;
+}
+
 /* Custom palette */
 
 .background-dark-blue {
@@ -339,6 +344,11 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   max-height: 155px;
 }
 
+.cville-img-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .cville-img-text {
   font-family: 'Charlotte', cursive;
   font-size: 18px;
@@ -351,6 +361,16 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   font-size: 13px;
   line-height: 25px;
   vertical-align: bottom;
+}
+
+.cville-rec-row {
+  margin-bottom: 0;
+}
+
+.cville-rec-desktop-vertical-offset {
+  /* Offset vertical centering by height of cville img text*/
+  padding-bottom: 47px;
+  margin: 0;
 }
 
 /* Footer */
