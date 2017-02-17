@@ -287,8 +287,12 @@ td {
 .accomm-btn:hover {
   text-decoration: none;
   background-color: #07284b;
-
 }
+
+.accomm-btn:visited {
+  background-color: #4a627c;
+}
+
 .accomm-btn {
   padding-left: 10px;
   padding-right: 10px;
