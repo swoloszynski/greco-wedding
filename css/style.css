@@ -209,10 +209,17 @@ nav.nav-extended .nav-custom-wrapper {
   margin-bottom: 0;
 }
 
+.schedule-header-image {
+  max-width: 140px;
+  display: inline;
+}
+
 .schedule-accent-text {
   font-family: 'Charlotte', cursive;
   font-size: 22px;
-  margin-top: 0;
+  margin-top: 5;
+  margin-bottom: 10;
+  display: inline;
 }
 
 .schedule-event-time {
