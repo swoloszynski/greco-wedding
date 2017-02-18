@@ -243,6 +243,7 @@ nav.nav-extended .nav-custom-wrapper {
   font-family: 'Bodoni-72-Book', serif;
   font-size: 24px;
   line-height: 26px;
+  vertical-align: top;
 }
 
 .schedule-event-name {
