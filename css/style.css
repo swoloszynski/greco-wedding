@@ -229,20 +229,20 @@ nav.nav-extended .nav-custom-wrapper {
 
 .schedule-event-time {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .schedule-event-name {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .schedule-event-location {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 20px;
   padding-bottom: 10px;
 }
 
