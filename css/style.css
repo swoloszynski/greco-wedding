@@ -58,6 +58,7 @@ html {
 
 html a {
  color: #4a627c;
+ text-decoration: underline;
 }
 
 html a:hover {
@@ -66,10 +67,22 @@ html a:hover {
 
 /* Nav */
 
+.side-nav a {
+  text-decoration: none;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.side-nav {
+  width: 200px;
+}
+
 .nav-custom-wrapper a {
   color: #fbfdfc;
    font-family: 'Bodoni-72-Book', serif;
-   font-size: 19px;
+   font-size: 20px;
 }
 
 .nav-custom-wrapper {
@@ -142,7 +155,7 @@ nav.nav-extended .nav-custom-wrapper {
 
 .intro-text {
     font-family: 'Bodoni-72-Book', serif;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .cushion-25 {
@@ -152,6 +165,10 @@ nav.nav-extended .nav-custom-wrapper {
 .cushion-15 {
   height: 15px;
   margin: 0;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
 }
 
 /* Custom palette */
@@ -224,20 +241,20 @@ nav.nav-extended .nav-custom-wrapper {
 
 .schedule-event-time {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .schedule-event-name {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .schedule-event-location {
   font-family: 'Bodoni-72-Book', serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 22px;
   padding-bottom: 10px;
 }
 
@@ -254,7 +271,7 @@ td {
 
 /* Accommodations */
 .accomm-text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -268,7 +285,7 @@ td {
 }
 
 .accomm-subheader-text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 22px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -292,6 +309,7 @@ td {
   padding-right: 10px;
   height: 36px;
   line-height: 36px;
+  font-size: 16px;
 }
 
 /* Footer */
