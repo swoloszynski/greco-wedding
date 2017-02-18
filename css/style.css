@@ -155,6 +155,10 @@ nav.nav-extended .nav-custom-wrapper {
   margin: 0;
 }
 
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
 /* Custom palette */
 
 .background-dark-blue {
