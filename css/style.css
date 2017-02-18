@@ -58,6 +58,7 @@ html {
 
 html a {
  color: #4a627c;
+ text-decoration: underline;
 }
 
 html a:hover {
