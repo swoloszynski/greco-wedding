@@ -105,6 +105,16 @@ nav.nav-extended .nav-custom-wrapper {
   color: #d3a75d;
 }
 
+.mobile-menu-header {
+  font-family: 'Bodoni-72-Smallcaps-Book', serif;
+  line-height: 52px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 64px;
+  margin-right: 64px;
+  font-size: 26px;
+}
+
 /* Banner */
 
 .banner-image {
