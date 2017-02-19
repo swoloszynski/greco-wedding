@@ -170,6 +170,7 @@ nav.nav-extended .nav-custom-wrapper {
 
 .cushion-25 {
   height: 25px;
+  margin: 0;
 }
 
 .cushion-15 {
@@ -309,7 +310,7 @@ td {
 .accomm-header-text {
   font-family: 'Charlotte', cursive;
   font-size: 22px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
