@@ -81,7 +81,7 @@ html a:hover {
 
 .nav-custom-wrapper a {
   color: #fbfdfc;
-   font-family: 'Bodoni-72-Book', serif;
+  font-family: 'Bodoni-72-Book', serif;
    font-size: 20px;
 }
 
@@ -170,10 +170,16 @@ nav.nav-extended .nav-custom-wrapper {
 
 .cushion-25 {
   height: 25px;
+  margin: 0;
 }
 
 .cushion-15 {
   height: 15px;
+  margin: 0;
+}
+
+.cushion-10  {
+  height: 10px;
   margin: 0;
 }
 
@@ -293,7 +299,8 @@ td {
 }
 
 /* Accommodations */
-.accomm-text {
+.accomm-text,
+.cville-text {
   font-size: 20px;
   line-height: 22px;
   margin-top: 5px;
@@ -303,7 +310,7 @@ td {
 .accomm-header-text {
   font-family: 'Charlotte', cursive;
   font-size: 22px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -333,6 +340,105 @@ td {
   height: 36px;
   line-height: 36px;
   font-size: 16px;
+}
+
+/* Charlottesville */
+.cville-header-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.custom-nav-tabs {
+  height: 34px;
+}
+
+.custom-nav-tabs .nav-content {
+  height: 32px;
+}
+
+.custom-nav-tabs .tabs {
+  height: 28px;
+}
+
+.custom-nav-tabs .custom-tab a {
+  font-size: 16px;
+}
+
+.custom-tab-link {
+  text-decoration: none;
+}
+
+.custom-tab-link:hover {
+  text-decoration: none;
+}
+
+.nav-custom-tabs-wrapper a {
+  color: #ca9439;
+  font-family: 'Bodoni-72-Book', serif;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.nav-custom-tabs-wrapper {
+  background: #ca9439;
+  color: #fbfdfc;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav.nav-extended .nav-custom-tabs-wrapper {
+  min-height: 62px;
+}
+
+.nav-custom-tabs-wrapper > a > .nav-custom-active {
+  color: #d3a75d;
+}
+
+.nav-custom-tabs-wrapper > a > .nav-custom-tab:hover {
+  color: #d3a75d;
+}
+
+@media only screen and (min-width: 601px) {
+  .custom-tab {
+    width: 20%;
+  }
+}
+
+.cville-img {
+  max-height: 155px;
+}
+
+.cville-img-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cville-img-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cville-who-label-mobile {
+  font-family: 'Charlotte', cursive;
+  font-size: 13px;
+  line-height: 25px;
+  vertical-align: bottom;
+}
+
+.cville-rec-row {
+  margin-bottom: 0;
+}
+
+.cville-rec-desktop-vertical-offset {
+  /* Offset vertical centering by height of cville img text*/
+  padding-bottom: 47px;
+  margin: 0;
 }
 
 /* Footer */
