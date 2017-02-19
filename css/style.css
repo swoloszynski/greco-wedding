@@ -354,6 +354,10 @@ td {
   height: 28px;
 }
 
+.custom-tab-link {
+  text-decoration: none;
+}
+
 .custom-tab-link:hover {
   text-decoration: none;
 }
