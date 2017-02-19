@@ -469,6 +469,11 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   }
 }
 
+/* Photos */
+.photo-container {
+  width: 95%;
+}
+
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
