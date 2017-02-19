@@ -27,5 +27,5 @@
               users: ***********@gmail.com
          IP Address: 45.55.110.124
 
-    Success! Project is published and running at kateandpatrick.wedding
+    Success! Project is published and running at [kateandpatrick.wedding](http://kateandpatrick.wedding/)
   ```
