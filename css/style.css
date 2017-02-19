@@ -343,6 +343,14 @@ td {
 }
 
 /* Charlottesville */
+.cville-header-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
 .custom-nav-tabs {
   height: 34px;
 }
