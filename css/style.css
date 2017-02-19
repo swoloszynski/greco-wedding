@@ -300,7 +300,8 @@ td {
 
 /* Accommodations */
 .accomm-text,
-.cville-text {
+.cville-text,
+.registry-text {
   font-size: 20px;
   line-height: 22px;
   margin-top: 5px;
@@ -439,6 +440,33 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   /* Offset vertical centering by height of cville img text*/
   padding-bottom: 47px;
   margin: 0;
+}
+
+/* Registry */
+.registry-header-text {
+  font-family: 'Charlotte', cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+
+.registry-text {
+  margin-bottom: 0;
+}
+
+.registry-img {
+  padding-bottom: 10px;
+}
+
+.registry-btn {
+  min-width: 155px;
+}
+
+@media only screen and (max-width: 600px) {
+  .registry-btn {
+    min-width: 90%;
+  }
 }
 
 /* Footer */
