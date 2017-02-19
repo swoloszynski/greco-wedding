@@ -237,7 +237,7 @@ nav.nav-extended .nav-custom-wrapper {
 }
 
 .schedule-header-image {
-  max-width: 140px;
+  max-width: 100px;
   display: inline;
 }
 
@@ -254,6 +254,7 @@ nav.nav-extended .nav-custom-wrapper {
   font-size: 24px;
   line-height: 26px;
   vertical-align: top;
+  white-space: nowrap;
 }
 
 .schedule-event-name {
@@ -272,12 +273,23 @@ nav.nav-extended .nav-custom-wrapper {
 .schedule-single-row .schedule-event-time,
 .schedule-single-row .schedule-event-name {
   padding-bottom: 10px;
+}
 
+.schedule-first-row td {
+  padding-top: 10px;
+}
+
+.schedule-header-row {
+  white-space: nowrap;
 }
 
 td {
   padding-top : 0;
   padding-bottom : 0;
+}
+
+.schedule-header-row td {
+  padding-top: 10px;
 }
 
 /* Accommodations */
