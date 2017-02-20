@@ -446,6 +446,14 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   margin: 0;
 }
 
+/* Maps */
+.map {
+    width: 90%;
+    margin-left: 5%;
+    height: 500px;
+    margin-bottom: 36px;
+}
+
 /* Registry */
 .registry-header-text {
   font-family: 'Charlotte', cursive;
