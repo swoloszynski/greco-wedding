@@ -295,7 +295,11 @@ td {
 }
 
 .schedule-header-row td {
-  padding-top: 10px;
+  padding-top: 28px;
+}
+
+.schedule-section {
+  padding-top: 0;
 }
 
 /* Accommodations */
