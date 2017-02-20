@@ -137,7 +137,7 @@ function init() {
     });
     google.maps.event.addListener(markerTimberlake , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Timberlake\s Drug Store',
+        content:'Timberlake\'s Drug Store',
         position: coordTimberlake,
         });
         infowindow.open(map1);
