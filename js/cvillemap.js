@@ -11,12 +11,12 @@ function init() {
     var mapElement = document.getElementById('cvillemap1');
     var map1 = new google.maps.Map(mapElement, map1Options);
 
-    var iconBase = 'img/icons/';
+    var pinIcon = 'img/pin.png';
     var coordTaco = {lat: 38.024793, lng: -78.482911};
     var markerTacos = new google.maps.Marker({
         position: new google.maps.LatLng(coordTaco),
         map: map1,
-        icon: iconBase + 'pin.png',
+        icon: pinIcon
     });
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
@@ -30,7 +30,7 @@ function init() {
     var markerBodosCorner = new google.maps.Marker({
         position: coordBodosCorner,
         map: map1,
-        icon: iconBase + 'pin.png',
+        icon: pinIcon
     });
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
