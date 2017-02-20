@@ -474,6 +474,19 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   width: 95%;
 }
 
+.photos-img,
+.photos-col {
+  padding: 0;
+}
+
+.photo-row {
+  margin-bottom: 0;
+}
+
+.photo-section {
+  padding-bottom: 0;
+}
+
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
