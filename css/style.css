@@ -456,7 +456,7 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 }
 
 .registry-text {
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 .registry-img {
@@ -465,6 +465,11 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 
 .registry-btn {
   min-width: 155px;
+}
+
+.registry-row {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
