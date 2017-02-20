@@ -469,6 +469,35 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   }
 }
 
+/* Photos */
+.photo-container {
+  width: 95%;
+}
+
+.photos-img,
+.photos-col {
+  padding: 0;
+}
+
+.photo-row {
+  margin-bottom: 0;
+}
+
+.photo-section {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .photo-mobile-row img {
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  .photo-mobile-row {
+    margin-bottom: 0;
+  }
+}
+
 /* Footer */
 footer {
  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;

@@ -17,6 +17,22 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" crossorigin="anonymous">
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+        <!--<![endif]-->
+
+
+            <!--[if lte IE 8]>
+                <link rel="stylesheet" href="css/gallery-old-ie.css">
+            <![endif]-->
+            <!--[if gt IE 8]><!-->
+                <link rel="stylesheet" href="css/gallery.css">
+            <!--<![endif]-->
     </head>
 
 
@@ -31,15 +47,15 @@
             <a href="wedding.html"><div class="col s12 m4 l2 center nav-custom-tab">Wedding</div></a>
             <a href="accommodations.html"><div class="col s12 m4 l2 center nav-custom-tab">Accommodations</div></a>
             <a href="charlottesville.html"><div class="col s12 m4 l2 center nav-custom-tab">Charlottesville</div></a>
-            <a href="registry.html"><div class="col s12 m4 l2 center nav-custom-tab nav-custom-active">Registry</div></a>
-            <a href="photos.html"><div class="col s12 m4 l2 center nav-custom-tab">Photos</div></a>
+            <a href="registry.html"><div class="col s12 m4 l2 center nav-custom-tab">Registry</div></a>
+            <a href="photos.html"><div class="col s12 m4 l2 center nav-custom-tab nav-custom-active">Photos</div></a>
         </div>
 
         <!-- Mobile menu -->
         <nav class="nav-extended hide-on-med-and-up">
             <div class="nav-wrapper  nav-custom-wrapper hide-on-med-and-up">
                 <a href="#" data-activates="mobile-demo" class="button-collapse no-decoration hide-on-med-and-up"><i class="material-icons">menu</i></a>
-                <p class="center hide-on-med-and-up mobile-menu-header">Registry</p>
+                <p class="center hide-on-med-and-up mobile-menu-header">Photos</p>
                 <ul class="side-nav background-light-blue text-off-white" id="mobile-demo">
                     <li><a class="no-decoration" href="index.html">Home</a></li>
                     <li><a class="no-decoration" href="wedding.html">Wedding</a></li>
@@ -51,32 +67,92 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container photo-container">
             <div class="section">
-                <!-- Registries -->
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <p class="text-dark-blue registry-header-text">Registries</p>
-                        <img class="responsive-img registry-img hide-on-small-only" src="img/registry.jpg">
-                        <p class="text-dark-blue registry-text">Your presence at our wedding is all we could ask for and gifts are not needed, but if you would like to give us a gift we have prepared registries at:</p>
+                <!-- All sizes -->
+                <!-- Vineyard and Tree Kiss -->
+                <div class="row photo-mobile-row">
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick01.jpg">
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick02.jpg">
                     </div>
                 </div>
 
-                <!-- Buttons -->
-                <div class="row">
-                    <div class="col s12 m4 l4 center">
-                        <a href="http://www.crateandbarrel.com/gift-registry/kathryn-kingsbury-and-patrick-greco/r5647055" target="_blank" class="accomm-btn registry-btn btn waves-effect waves-light background-light-blue">Crate & Barrel</a>
-                        <p class="text-dark-blue registry-text">Registry number:<br>5647055</p>
+                <!-- Desktop only -->
+                <!-- B/W, Vertical, Tree side-by-side, Lawn rooms -->
+                <div class="row photo-row hide-on-med-and-down">
+                    <div class="col s12 m6 l8">
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <img class="responsive-img" src="img/katepatrick09bh.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <img class="responsive-img" src="img/katepatrick05.jpg">
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <img class="responsive-img" src="img/katepatrick11.jpg">
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col s12 m4 l4 center">
-                        <a href="https://www-secure.target.com/gift-registry/giftgiver?registryId=a1d52e61f1f246dda8f7a6b3aad22b13&type=wedding&occasionType=&lnk=regPreview#1" target="_blank" class="accomm-btn registry-btn btn waves-effect waves-light background-light-blue">Target</a>
-                        <p class="text-dark-blue registry-text">Registry number:<br>013399124566542</p>
-                    </div>
-                    <div class="col s12 m4 l4 center">
-                        <a href="https://www.rei.com/GiftRegistryDetails/15119895" target="_blank" class="accomm-btn registry-btn btn waves-effect waves-light background-light-blue">REI</a>
-                        <p class="text-dark-blue registry-text">Registry number:<br>GR151198953</p>
+                    <div class="col s12 m6 l4">
+                        <img class="responsive-img" src="img/katepatrick03.jpg">
                     </div>
                 </div>
+
+                <!-- Medium and mobile -->
+                <!-- B/W all the way across -->
+                <div class="row photo-mobile-row hide-on-large-only">
+                    <div class="col s12 m12">
+                        <img class="responsive-img" src="img/katepatrick09bh.jpg">
+                    </div>
+                </div>
+
+                <!-- Medium and mobile -->
+                <!-- Tree side-by-side and Lawn rooms -->
+                <div class="row photo-mobile-row hide-on-large-only">
+                    <div class="col s12 m6">
+                        <img class="responsive-img" src="img/katepatrick05.jpg">
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick11.jpg">
+                    </div>
+                </div>
+
+                <!-- Medium and Mobile -->
+                <!-- Horizontally cropped vertical -->
+                <div class="row photo-mobile-row hide-on-large-only">
+                    <div class="col s12 m12">
+                        <img class="responsive-img" src="img/katepatrick03h.jpg">
+                    </div>
+                </div>
+
+                <!-- Desktop and medium -->
+                <!-- Willow kiss and sitting under tree -->
+                <div class="row hide-on-small-only">
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick08.jpg">
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick10.jpg">
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <!-- Sitting under tree and willow kiss -->
+                <div class="row photo-mobile-row hide-on-med-and-up">
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick10.jpg">
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="img/katepatrick08.jpg">
+                    </div>
+                </div>
+
 
             </div>
         </div>
