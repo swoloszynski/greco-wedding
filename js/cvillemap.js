@@ -110,14 +110,12 @@ function init() {
 
     // Favorites
     var coordMcCormick = {lat: 38.032971, lng: -78.522385};
-    var markerMcCormick = new google.maps.Marker({
-        position: coordMcCormick,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelMcCormick = 'McCormick Observatory';
+    var markerMcCormick = makeMapMarker(coordMcCormick, map1, pinUrl, 110,
+        labelMcCormick, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerMcCormick , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'McCormick Observatory',
+        content: labelMcCormick,
         position: coordMcCormick,
         });
         infowindow.open(map1);
@@ -125,56 +123,50 @@ function init() {
 
     // What to see
     var coordMarket = {lat: 38.029585, lng: -78.481659};
-    var markerMarket = new google.maps.Marker({
-        position: coordMarket,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelMarket = 'Farmer\'s Market';
+    var markerMarket = makeMapMarker(coordMarket, map1, pinUrl, 81,
+        labelMarket, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerMarket , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Farmer\s Market',
+        content: labelMarket,
         position: coordMarket,
         });
         infowindow.open(map1);
     });
 
     var coordTimberlake = {lat: 38.029999, lng: -78.479346};
-    var markerTimberlake = new google.maps.Marker({
-        position: coordTimberlake,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelTimberlake = 'Timberlake\'s Drug Store';
+    var markerTimberlake = makeMapMarker(coordTimberlake, map1, pinUrl, 110,
+        labelTimberlake, labelFontSize, labelFontWeight);
+
     google.maps.event.addListener(markerTimberlake , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Timberlake\'s Drug Store',
+        content: labelTimberlake,
         position: coordTimberlake,
         });
         infowindow.open(map1);
     });
 
     var coordUva = {lat: 38.035247, lng: -78.503638};
-    var markerUva = new google.maps.Marker({
-        position: coordUva,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelUva = 'The Lawn';
+    var markerUva = makeMapMarker(coordUva, map1, pinUrl, 55,
+        labelUva, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerUva , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'UVa Lawn and Rotunda',
+        content: labelUva,
         position: coordUva,
         });
         infowindow.open(map1);
     });
 
     var coordCarterMnt = {lat: 37.991448, lng: -78.471768};
-    var markerCarterMnt = new google.maps.Marker({
-        position: coordCarterMnt,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelCarterMnt = 'Carter Mountain Orchard';
+    var markerCarterMnt = makeMapMarker(coordCarterMnt, map1, pinUrl, 110,
+        labelCarterMnt, labelFontSize, labelFontWeight);
+
     google.maps.event.addListener(markerCarterMnt , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'CarterMnt Lawn and Rotunda',
+        content: labelCarterMnt,
         position: coordCarterMnt,
         });
         infowindow.open(map1);
