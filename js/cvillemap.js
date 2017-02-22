@@ -13,6 +13,7 @@ function init() {
     var pinUrl = 'img/pin.png';
     var labelVerticalOffset = 35;
     var labelFontSize = "16px";
+    var labelFontWeight = "bold";
     var pinIcon = {
         url: pinUrl,
     };
@@ -30,7 +31,7 @@ function init() {
         label: {
             text: labelTaco,
             fontSize: labelFontSize,
-            fontWeight: "bold"
+            fontWeight: labelFontWeight
         }
     });
     google.maps.event.addListener(markerTacos , 'click', function(){
@@ -53,7 +54,7 @@ function init() {
         label: {
             text: labelBodosCorner,
             fontSize: labelFontSize,
-            fontWeight: "bold"
+            fontWeight: labelFontWeight
         }
     });
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
@@ -76,7 +77,7 @@ function init() {
         label: {
             text: 'Ace Biscuit & Barbecue',
             fontSize: labelFontSize,
-            fontWeight: "bold"
+            fontWeight: labelFontWeight
         }
     });
     google.maps.event.addListener(markerAce , 'click', function(){
