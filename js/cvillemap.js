@@ -1,4 +1,20 @@
 // Docs: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+var makeMapMarker = function (coord, map, markerIconUrl, labelHorizOffset, labelText, labelFontSize, labelFontWeight) {
+    return new google.maps.Marker({
+        position: new google.maps.LatLng(coord),
+        map: map,
+        icon: {
+            url: markerIconUrl,
+            labelOrigin: new google.maps.Point(labelHorizOffset,35)
+        },
+        label: {
+            text: labelText,
+            fontSize: labelFontSize,
+            fontWeight: labelFontWeight
+        }
+    });
+};
+
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var map1Options = {
@@ -21,19 +37,7 @@ function init() {
     // Breakfast
     var coordTaco = {lat: 38.024793, lng: -78.482911};
     var labelTaco = 'Brazo\'s Tacos';
-    var markerTacos = new google.maps.Marker({
-        position: new google.maps.LatLng(coordTaco),
-        map: map1,
-        icon: {
-            url: pinUrl,
-            labelOrigin: new google.maps.Point(70,labelVerticalOffset)
-        },
-        label: {
-            text: labelTaco,
-            fontSize: labelFontSize,
-            fontWeight: labelFontWeight
-        }
-    });
+    var markerTacos = makeMapMarker(coordTaco, map1, pinUrl, 70, labelTaco, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:labelTaco,
@@ -44,19 +48,7 @@ function init() {
 
     var coordBodosCorner = {lat: 38.035776, lng: -78.500627};
     var labelBodosCorner = 'Bodo\'s Bagels';
-    var markerBodosCorner = new google.maps.Marker({
-        position: coordBodosCorner,
-        map: map1,
-        icon: {
-            url: pinUrl,
-            labelOrigin: new google.maps.Point(70,labelVerticalOffset)
-        },
-        label: {
-            text: labelBodosCorner,
-            fontSize: labelFontSize,
-            fontWeight: labelFontWeight
-        }
-    });
+    var markerBodosCorner = makeMapMarker(coordBodosCorner, map1, pinUrl, 70, labelBodosCorner, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:labelBodosCorner,
