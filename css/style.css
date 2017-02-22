@@ -349,8 +349,8 @@ td {
 
 /* Charlottesville */
 .tab-content-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .cville-header-text {
@@ -443,6 +443,16 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 
 .cville-rec-row {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 601px) {
+  .cville-rec-text-right {
+    padding-right: 60px;
+  }
+
+  .cville-rec-text-left {
+    padding-left: 60px;
+  }
 }
 
 .cville-rec-desktop-vertical-offset {
