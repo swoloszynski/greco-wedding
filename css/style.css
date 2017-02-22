@@ -455,11 +455,11 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 
 @media only screen and (min-width: 601px) {
   .cville-rec-text-right {
-    padding-right: 80px;
+    padding-right: 15%;
   }
 
   .cville-rec-text-left {
-    padding-left: 80px;
+    padding-left: 15%;
   }
 }
 
@@ -483,12 +483,13 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   font-family: 'Charlotte', cursive;
   font-size: 22px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   line-height: 40px;
 }
 
 .registry-text {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
+  margin-top: 10px;
 }
 
 .registry-img {
