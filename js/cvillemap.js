@@ -1,4 +1,20 @@
 // Docs: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+var makeMapMarker = function (coord, map, markerIconUrl, labelHorizOffset, labelText, labelFontSize, labelFontWeight) {
+    return new google.maps.Marker({
+        position: new google.maps.LatLng(coord),
+        map: map,
+        icon: {
+            url: markerIconUrl,
+            labelOrigin: new google.maps.Point(labelHorizOffset,35)
+        },
+        label: {
+            text: labelText,
+            fontSize: labelFontSize,
+            fontWeight: labelFontWeight
+        }
+    });
+};
+
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var map1Options = {
@@ -10,32 +26,34 @@ function init() {
 
     var mapElement = document.getElementById('cvillemap1');
     var map1 = new google.maps.Map(mapElement, map1Options);
-    var pinIcon = 'img/pin.png';
+    var pinUrl = 'img/pin.png';
+    var labelVerticalOffset = 35;
+    var labelFontSize = "16px";
+    var labelFontWeight = "bold";
+    var pinIcon = {
+        url: pinUrl,
+    };
 
     // Breakfast
     var coordTaco = {lat: 38.024793, lng: -78.482911};
-    var markerTacos = new google.maps.Marker({
-        position: new google.maps.LatLng(coordTaco),
-        map: map1,
-        icon: pinIcon
-    });
+    var labelTaco = 'Brazo\'s Tacos';
+    var markerTacos = makeMapMarker(coordTaco, map1, pinUrl, 70, labelTaco,
+        labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Brazo\'s Tacos',
+        content:labelTaco,
         position: coordTaco,
         });
         infowindow.open(map1);
     });
 
     var coordBodosCorner = {lat: 38.035776, lng: -78.500627};
-    var markerBodosCorner = new google.maps.Marker({
-        position: coordBodosCorner,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelBodosCorner = 'Bodo\'s Bagels';
+    var markerBodosCorner = makeMapMarker(coordBodosCorner, map1, pinUrl, 70,
+        labelBodosCorner, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Bodo\'s Bagels',
+        content:labelBodosCorner,
         position: coordBodosCorner,
         });
         infowindow.open(map1);
@@ -43,28 +61,23 @@ function init() {
 
     // Lunch
     var coordAce = {lat: 38.038023, lng: -78.484906};
-    var markerAce = new google.maps.Marker({
-        position: new google.maps.LatLng(coordAce),
-        map: map1,
-        icon: pinIcon
-    });
+    var labelAce = 'Ace Biscuit & Barbecue';
+    var markerAce = makeMapMarker(coordAce, map1, pinUrl, 107, labelAce,
+        labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerAce , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Ace Biscuit & Barbecue',
+        content: labelAce,
         position: coordAce,
         });
         infowindow.open(map1);
     });
 
     var coordPeterChang = {lat: 38.055223, lng: -78.500523};
-    var markerPeterChang = new google.maps.Marker({
-        position: coordPeterChang,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelPeterChang = 'Peter Chang China Grill';
+    var markerPeterChang = makeMapMarker(coordPeterChang, map1, pinUrl, 107, labelPeterChang, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerPeterChang , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Peter Chang China Grill',
+        content: labelPeterChang,
         position: coordPeterChang,
         });
         infowindow.open(map1);
@@ -72,28 +85,24 @@ function init() {
 
     // Drinks
     var coordWhiskeyJar = {lat: 38.031402, lng: -78.482780};
-    var markerWhiskeyJar = new google.maps.Marker({
-        position: coordWhiskeyJar,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelWhiskeyJar = 'The Whiskey Jar';
+    var markerWhiskeyJar = makeMapMarker(coordWhiskeyJar, map1, pinUrl, 82,
+        labelWhiskeyJar, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerWhiskeyJar , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'The Whisky Jar',
+        content: labelWhiskeyJar,
         position: coordWhiskeyJar,
         });
         infowindow.open(map1);
     });
 
     var coordSkyBar = {lat: 38.029750, lng: -78.478614};
-    var markerSkyBar = new google.maps.Marker({
-        position: coordSkyBar,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelSkyBar = 'Skybar';
+    var markerSkyBar = makeMapMarker(coordSkyBar, map1, pinUrl, 47,
+        labelSkyBar, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerSkyBar , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Skybar',
+        content:labelSkyBar,
         position: coordSkyBar,
         });
         infowindow.open(map1);
@@ -101,14 +110,12 @@ function init() {
 
     // Favorites
     var coordMcCormick = {lat: 38.032971, lng: -78.522385};
-    var markerMcCormick = new google.maps.Marker({
-        position: coordMcCormick,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelMcCormick = 'McCormick Observatory';
+    var markerMcCormick = makeMapMarker(coordMcCormick, map1, pinUrl, 110,
+        labelMcCormick, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerMcCormick , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'McCormick Observatory',
+        content: labelMcCormick,
         position: coordMcCormick,
         });
         infowindow.open(map1);
@@ -116,56 +123,50 @@ function init() {
 
     // What to see
     var coordMarket = {lat: 38.029585, lng: -78.481659};
-    var markerMarket = new google.maps.Marker({
-        position: coordMarket,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelMarket = 'Farmer\'s Market';
+    var markerMarket = makeMapMarker(coordMarket, map1, pinUrl, 81,
+        labelMarket, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerMarket , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Farmer\s Market',
+        content: labelMarket,
         position: coordMarket,
         });
         infowindow.open(map1);
     });
 
     var coordTimberlake = {lat: 38.029999, lng: -78.479346};
-    var markerTimberlake = new google.maps.Marker({
-        position: coordTimberlake,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelTimberlake = 'Timberlake\'s Drug Store';
+    var markerTimberlake = makeMapMarker(coordTimberlake, map1, pinUrl, 110,
+        labelTimberlake, labelFontSize, labelFontWeight);
+
     google.maps.event.addListener(markerTimberlake , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Timberlake\'s Drug Store',
+        content: labelTimberlake,
         position: coordTimberlake,
         });
         infowindow.open(map1);
     });
 
     var coordUva = {lat: 38.035247, lng: -78.503638};
-    var markerUva = new google.maps.Marker({
-        position: coordUva,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelUva = 'The Lawn';
+    var markerUva = makeMapMarker(coordUva, map1, pinUrl, 55,
+        labelUva, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerUva , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'UVa Lawn and Rotunda',
+        content: labelUva,
         position: coordUva,
         });
         infowindow.open(map1);
     });
 
     var coordCarterMnt = {lat: 37.991448, lng: -78.471768};
-    var markerCarterMnt = new google.maps.Marker({
-        position: coordCarterMnt,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelCarterMnt = 'Carter Mountain Orchard';
+    var markerCarterMnt = makeMapMarker(coordCarterMnt, map1, pinUrl, 110,
+        labelCarterMnt, labelFontSize, labelFontWeight);
+
     google.maps.event.addListener(markerCarterMnt , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'CarterMnt Lawn and Rotunda',
+        content: labelCarterMnt,
         position: coordCarterMnt,
         });
         infowindow.open(map1);
