@@ -85,28 +85,24 @@ function init() {
 
     // Drinks
     var coordWhiskeyJar = {lat: 38.031402, lng: -78.482780};
-    var markerWhiskeyJar = new google.maps.Marker({
-        position: coordWhiskeyJar,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelWhiskeyJar = 'The Whiskey Jar';
+    var markerWhiskeyJar = makeMapMarker(coordWhiskeyJar, map1, pinUrl, 82,
+        labelWhiskeyJar, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerWhiskeyJar , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'The Whisky Jar',
+        content: labelWhiskeyJar,
         position: coordWhiskeyJar,
         });
         infowindow.open(map1);
     });
 
     var coordSkyBar = {lat: 38.029750, lng: -78.478614};
-    var markerSkyBar = new google.maps.Marker({
-        position: coordSkyBar,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelSkyBar = 'Skybar';
+    var markerSkyBar = makeMapMarker(coordSkyBar, map1, pinUrl, 47,
+        labelSkyBar, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerSkyBar , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Skybar',
+        content:labelSkyBar,
         position: coordSkyBar,
         });
         infowindow.open(map1);
