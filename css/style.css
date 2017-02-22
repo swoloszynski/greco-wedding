@@ -455,11 +455,11 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 
 @media only screen and (min-width: 601px) {
   .cville-rec-text-right {
-    padding-right: 80px;
+    padding-right: 15%;
   }
 
   .cville-rec-text-left {
-    padding-left: 80px;
+    padding-left: 15%;
   }
 }
 
