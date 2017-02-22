@@ -419,7 +419,7 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 }
 
 .cville-img {
-  max-height: 155px;
+  max-height: 160px;
 }
 
 .cville-img-wrapper {
@@ -441,17 +441,25 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   vertical-align: bottom;
 }
 
+.cville-portrait-w-text-wrapper-left {
+  float: right;
+}
+
+.cville-portrait-w-text-wrapper-right {
+  float: left;
+}
+
 .cville-rec-row {
   margin-bottom: 0;
 }
 
 @media only screen and (min-width: 601px) {
   .cville-rec-text-right {
-    padding-right: 60px;
+    padding-right: 80px;
   }
 
   .cville-rec-text-left {
-    padding-left: 60px;
+    padding-left: 80px;
   }
 }
 
