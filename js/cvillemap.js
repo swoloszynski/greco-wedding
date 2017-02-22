@@ -37,7 +37,8 @@ function init() {
     // Breakfast
     var coordTaco = {lat: 38.024793, lng: -78.482911};
     var labelTaco = 'Brazo\'s Tacos';
-    var markerTacos = makeMapMarker(coordTaco, map1, pinUrl, 70, labelTaco, labelFontSize, labelFontWeight);
+    var markerTacos = makeMapMarker(coordTaco, map1, pinUrl, 70, labelTaco,
+        labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:labelTaco,
@@ -48,7 +49,8 @@ function init() {
 
     var coordBodosCorner = {lat: 38.035776, lng: -78.500627};
     var labelBodosCorner = 'Bodo\'s Bagels';
-    var markerBodosCorner = makeMapMarker(coordBodosCorner, map1, pinUrl, 70, labelBodosCorner, labelFontSize, labelFontWeight);
+    var markerBodosCorner = makeMapMarker(coordBodosCorner, map1, pinUrl, 70,
+        labelBodosCorner, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:labelBodosCorner,
@@ -59,36 +61,23 @@ function init() {
 
     // Lunch
     var coordAce = {lat: 38.038023, lng: -78.484906};
-    var markerAce = new google.maps.Marker({
-        position: new google.maps.LatLng(coordAce),
-        map: map1,
-        icon: {
-            url: pinUrl,
-            labelOrigin: new google.maps.Point(105,labelVerticalOffset)
-        },
-        label: {
-            text: 'Ace Biscuit & Barbecue',
-            fontSize: labelFontSize,
-            fontWeight: labelFontWeight
-        }
-    });
+    var labelAce = 'Ace Biscuit & Barbecue';
+    var markerAce = makeMapMarker(coordAce, map1, pinUrl, 107, labelAce,
+        labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerAce , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Ace Biscuit & Barbecue',
+        content: labelAce,
         position: coordAce,
         });
         infowindow.open(map1);
     });
 
     var coordPeterChang = {lat: 38.055223, lng: -78.500523};
-    var markerPeterChang = new google.maps.Marker({
-        position: coordPeterChang,
-        map: map1,
-        icon: pinIcon
-    });
+    var labelPeterChang = 'Peter Chang China Grill';
+    var markerPeterChang = makeMapMarker(coordPeterChang, map1, pinUrl, 107, labelPeterChang, labelFontSize, labelFontWeight);
     google.maps.event.addListener(markerPeterChang , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Peter Chang China Grill',
+        content: labelPeterChang,
         position: coordPeterChang,
         });
         infowindow.open(map1);
