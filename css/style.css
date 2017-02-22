@@ -348,6 +348,11 @@ td {
 }
 
 /* Charlottesville */
+.tab-content-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .cville-header-text {
   font-family: 'Charlotte', cursive;
   font-size: 22px;
@@ -450,6 +455,7 @@ nav.nav-extended .nav-custom-tabs-wrapper {
 .map {
     width: 90%;
     margin-left: 5%;
+    margin-right: 5%;
     height: 500px;
     margin-bottom: 36px;
 }
