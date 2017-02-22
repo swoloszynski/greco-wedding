@@ -1,4 +1,20 @@
 // Docs: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+var makeMapMarker = function (map, coord, labelText, labelHorizOffset) {
+    return new google.maps.Marker({
+        position: new google.maps.LatLng(coord),
+        map: map,
+        icon: {
+            url: 'img/pin.png',
+            labelOrigin: new google.maps.Point(labelHorizOffset,35)
+        },
+        label: {
+            text: labelText,
+            fontSize: '14px',
+            fontWeight: 'bold'
+        }
+    });
+};
+
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var mapOptions = {
@@ -14,11 +30,8 @@ function init() {
 
     // Wedding Venue
     var coordWinery = {lat: 37.939056, lng: -78.498702};
-    var markerWinery = new google.maps.Marker({
-        position: new google.maps.LatLng(coordWinery),
-        map: map,
-        icon: pinIcon
-    });
+    var labelWinery = 'Trump Winery';
+    var markerWinery = makeMapMarker(map, coordWinery, labelWinery, 65);
     google.maps.event.addListener(markerWinery , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:'Trump Vineyard',
@@ -29,11 +42,8 @@ function init() {
 
     // The Omni
     var coordOmni = {lat: 38.031385, lng: -78.483660};
-    var markerOmni = new google.maps.Marker({
-        position: coordOmni,
-        map: map,
-        icon: pinIcon
-    });
+    var labelOmni = 'The Omni Hotel Downtown';
+    var markerOmni = makeMapMarker(map, coordOmni, labelOmni, 105);
     google.maps.event.addListener(markerOmni , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:'The Omni Hotel Downtown',
@@ -44,11 +54,8 @@ function init() {
 
     // The Hilton
     var coordHilton = {lat: 38.024591, lng: -78.438338};
-    var markerHilton = new google.maps.Marker({
-        position: new google.maps.LatLng(coordHilton),
-        map: map,
-        icon: pinIcon
-    });
+    var labelHilton = 'The Hilton Garden Inn';
+    var markerHilton = makeMapMarker(map, coordHilton, labelHilton, 90);
     google.maps.event.addListener(markerHilton , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
         content:'The Hilton Garden Inn',
