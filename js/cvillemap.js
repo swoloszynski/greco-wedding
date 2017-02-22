@@ -12,6 +12,7 @@ function init() {
     var map1 = new google.maps.Map(mapElement, map1Options);
     var pinUrl = 'img/pin.png';
     var labelVerticalOffset = 35;
+    var labelFontSize = "16px";
     var pinIcon = {
         url: pinUrl,
     };
@@ -28,7 +29,7 @@ function init() {
         },
         label: {
             text: labelTaco,
-            fontSize: "16px",
+            fontSize: labelFontSize,
             fontWeight: "bold"
         }
     });
@@ -51,7 +52,7 @@ function init() {
         },
         label: {
             text: labelBodosCorner,
-            fontSize: "16px",
+            fontSize: labelFontSize,
             fontWeight: "bold"
         }
     });
@@ -74,7 +75,7 @@ function init() {
         },
         label: {
             text: 'Ace Biscuit & Barbecue',
-            fontSize: "16px",
+            fontSize: labelFontSize,
             fontWeight: "bold"
         }
     });
