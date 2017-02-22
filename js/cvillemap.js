@@ -10,14 +10,26 @@ function init() {
 
     var mapElement = document.getElementById('cvillemap1');
     var map1 = new google.maps.Map(mapElement, map1Options);
-    var pinIcon = 'img/pin.png';
+    var pinUrl = 'img/pin.png';
+    var labelVerticalOffset = 35;
+    var pinIcon = {
+        url: pinUrl,
+    };
 
     // Breakfast
     var coordTaco = {lat: 38.024793, lng: -78.482911};
     var markerTacos = new google.maps.Marker({
         position: new google.maps.LatLng(coordTaco),
         map: map1,
-        icon: pinIcon
+        icon: {
+            url: pinUrl,
+            labelOrigin: new google.maps.Point(70,labelVerticalOffset)
+        },
+        label: {
+            text: 'Brazo\'s Tacos',
+            fontSize: "16px",
+            fontWeight: "bold"
+        }
     });
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
@@ -46,7 +58,15 @@ function init() {
     var markerAce = new google.maps.Marker({
         position: new google.maps.LatLng(coordAce),
         map: map1,
-        icon: pinIcon
+        icon: {
+            url: pinUrl,
+            labelOrigin: new google.maps.Point(105,labelVerticalOffset)
+        },
+        label: {
+            text: 'Ace Biscuit & Barbecue',
+            fontSize: "16px",
+            fontWeight: "bold"
+        }
     });
     google.maps.event.addListener(markerAce , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
