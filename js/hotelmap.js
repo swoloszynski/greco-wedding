@@ -34,7 +34,7 @@ function init() {
     var markerWinery = makeMapMarker(map, coordWinery, labelWinery, 65);
     google.maps.event.addListener(markerWinery , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Trump Vineyard',
+        content:labelWinery,
         position: coordWinery,
         });
         infowindow.open(map);
@@ -46,7 +46,7 @@ function init() {
     var markerOmni = makeMapMarker(map, coordOmni, labelOmni, 105);
     google.maps.event.addListener(markerOmni , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'The Omni Hotel Downtown',
+        content:labelOmni,
         position: coordOmni,
         });
         infowindow.open(map);
@@ -58,7 +58,7 @@ function init() {
     var markerHilton = makeMapMarker(map, coordHilton, labelHilton, 90);
     google.maps.event.addListener(markerHilton , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'The Hilton Garden Inn',
+        content:labelHilton,
         position: coordHilton,
         });
         infowindow.open(map);
