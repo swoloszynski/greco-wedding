@@ -18,6 +18,7 @@ function init() {
 
     // Breakfast
     var coordTaco = {lat: 38.024793, lng: -78.482911};
+    var labelTaco = 'Brazo\'s Tacos';
     var markerTacos = new google.maps.Marker({
         position: new google.maps.LatLng(coordTaco),
         map: map1,
@@ -26,28 +27,37 @@ function init() {
             labelOrigin: new google.maps.Point(70,labelVerticalOffset)
         },
         label: {
-            text: 'Brazo\'s Tacos',
+            text: labelTaco,
             fontSize: "16px",
             fontWeight: "bold"
         }
     });
     google.maps.event.addListener(markerTacos , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Brazo\'s Tacos',
+        content:labelTaco,
         position: coordTaco,
         });
         infowindow.open(map1);
     });
 
     var coordBodosCorner = {lat: 38.035776, lng: -78.500627};
+    var labelBodosCorner = 'Bodo\'s Bagels';
     var markerBodosCorner = new google.maps.Marker({
         position: coordBodosCorner,
         map: map1,
-        icon: pinIcon
+        icon: {
+            url: pinUrl,
+            labelOrigin: new google.maps.Point(70,labelVerticalOffset)
+        },
+        label: {
+            text: labelBodosCorner,
+            fontSize: "16px",
+            fontWeight: "bold"
+        }
     });
     google.maps.event.addListener(markerBodosCorner , 'click', function(){
         var infowindow = new google.maps.InfoWindow({
-        content:'Bodo\'s Bagels',
+        content:labelBodosCorner,
         position: coordBodosCorner,
         });
         infowindow.open(map1);
