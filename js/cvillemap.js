@@ -22,9 +22,9 @@ var makeMapMarker = function (map, coord, labelText, labelHorizOffset, labelVert
 google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var map1Options = {
-        zoom: 14,
+        zoom: 15,
         // Charlottesville
-        center: new google.maps.LatLng(38.040422, -78.495225),
+        center: new google.maps.LatLng(38.032505, -78.488573),
         clickableIcons: true,
         styles: [{"elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#bdbdbd"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.business","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]}]
     };
@@ -60,7 +60,7 @@ function init() {
 
     var coordSkyBar = {lat: 38.029750, lng: -78.478614};
     var labelSkyBar = 'Skybar';
-    var markerSkyBar = makeMapMarker(map1, coordSkyBar, labelSkyBar, 25, 45);
+    var markerSkyBar = makeMapMarker(map1, coordSkyBar, labelSkyBar, 45, 32);
 
     // Favorites
     var coordMcCormick = {lat: 38.032971, lng: -78.522385};
@@ -71,12 +71,12 @@ function init() {
     // What to see
     var coordMarket = {lat: 38.029585, lng: -78.481659};
     var labelMarket = 'Farmer\'s Market';
-    var markerMarket = makeMapMarker(map1, coordMarket, labelMarket, -45, 30);
+    var markerMarket = makeMapMarker(map1, coordMarket, labelMarket, -49, 30);
 
     var coordTimberlake = {lat: 38.029999, lng: -78.479346};
     var labelTimberlake = 'Timberlake\'s Drug Store';
     var markerTimberlake = makeMapMarker(map1, coordTimberlake,
-        labelTimberlake, 110, 22);
+        labelTimberlake, -78, 22);
 
     var coordUva = {lat: 38.035247, lng: -78.503638};
     var labelUva = 'The Lawn';

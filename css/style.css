@@ -478,6 +478,10 @@ nav.nav-extended .nav-custom-tabs-wrapper {
     margin-bottom: 36px;
 }
 
+#cvillemap1 {
+  height: 700px;
+}
+
 /* Registry */
 .registry-header-text {
   font-family: 'Charlotte', cursive;
