@@ -418,6 +418,30 @@ nav.nav-extended .nav-custom-tabs-wrapper {
   }
 }
 
+/* Mobile tabs */
+.custom-mobile-tab-row {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-mobile-tab {
+    background: #ca9439;
+    font-family: 'Bodoni-72-Book', serif;
+    font-size: 16px;
+    color: #fbfdfc;
+    text-transform: uppercase;
+  }
+  .custom-mobile-tab p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .show-on-mobile {
+    display: block !important;
+  }
+}
+
+
 .cville-img {
   max-height: 160px;
 }
