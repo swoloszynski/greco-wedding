@@ -67,7 +67,7 @@
         </div>
 
         <!-- Tabs -->
-        <nav class="custom-nav-tabs">
+        <nav class="custom-nav-tabs hide-on-small-only">
             <div class="nav-wrapper  nav-custom-tabs-wrapper">
                 <ul class="tabs tabs-transparent">
                     <li class="tab custom-tab"><a class="custom-tab-link active" href="#tab1">Breakfast</a></li>
@@ -79,11 +79,19 @@
             </div>
         </nav>
 
+
         <div class="tab-content-container">
+            <div class="row custom-mobile-tab-row">
+                <div class="col s12 custom-mobile-tab hide-on-med-and-up">
+                    <div class="tab ">
+                        <p class="center">Breakfast</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Breakfast Tab -->
-            <div id="tab1" class="col s12 section no-pad-bot">
-                <div class="row cushion-10"></div>
+            <div id="tab1" class="col s12 section no-pad-bot show-on-mobile">
+                <div class="row cushion-10 hide-on-small-only"></div>
 
                  <!-- Bride row -->
                  <div class="row valign-wrapper cville-rec-row">
@@ -118,8 +126,15 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col s12 custom-mobile-tab hide-on-med-and-up">
+                    <div class="tab ">
+                        <p class="center">Lunch</p>
+                    </div>
+                </div>
+            </div>
             <!-- Lunch tab -->
-            <div id="tab2" class="col s12 section no-pad-bot">
+            <div id="tab2" class="col s12 section no-pad-bot show-on-mobile">
                 <div class="row cushion-10"></div>
 
                  <!-- Bride row -->
